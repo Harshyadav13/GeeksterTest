@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+
+:root {
+  --off-canvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.offcanvas {
+  background-color: #4e73df;
+  color: white;
+}
+
+.sidebar-nav {
+  width: 270px;
+}
+.row h5 {
+  text-align: center;
+}
+.container-fluid {
+  margin-top: 30px;
+}
+.c1 {
+  margin-left: 15%;
+}
+
+@media (max-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  .offcanvas-backdrop.show {
+    opacity: 0 !important;
+  }
+
+  .sidebar-nav {
+    margin-top: 30px;
+    transform: none !important;
+    visibility: visible !important;
+    top: var(--topNavbarHeight) !important;
+    height: calc(100%-var(--topNavbarHeight));
+  }
+}
