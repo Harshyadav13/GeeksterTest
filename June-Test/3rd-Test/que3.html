@@ -4,23 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Test</title>
   </head>
-
   <body>
     <div>
-      <ol>
-        <li>Dehli</li>
-        <li>Mumbai</li>
-        <li>Jaipur</li>
-        <li>Kolkata</li>
-        <li>Indore</li>
-      </ol>
+      <ol id="ol"></ol>
     </div>
+    <script>
+      var list = document.getElementById("ol");
+      var city = ["Delhi", "Mumbai", "Jaipr", "Kolkata", "Indor"];
+      for (let i = 0; i < city.length; i++) {
+        list.innerHTML += `<li>${city[i]}</li>`;
+        console.log(city[i]);
+      }
+    </script>
   </body>
-  <script>
-    city = ["Delhi", "Mumbai", "Jaipur", "Kolkata", "Indore"];
-    document.write(city);
-    console.log(city);
-  </script>
 </html>
